@@ -82,15 +82,14 @@ header > nav > ul {
   max-width: 1050px;
   margin: 0 auto;
   background-color: #fff;
-  min-height: 700px;
+  height: auto;
 }
 
 #main-section aside {
   width: 200px;
   background-color: #fff;
-  min-height: 700px;
-  border-left: 1px solid #ddd;
   float: right;
+  display: block;
 }
 
 .news-letter p {
@@ -99,6 +98,7 @@ header > nav > ul {
 
 .news-letter {
   padding: 10px;
+  height: 100%;
 }
 
 .news-letter input {
@@ -110,10 +110,12 @@ header > nav > ul {
 }
 
 main {
+  display: block;
   float: right;
   width: calc(100% - 201px);
   padding: 20px;
   box-sizing: border-box;
+  border-right: 1px solid #ddd;
 }
 
 main #mainpic {
@@ -121,13 +123,14 @@ main #mainpic {
 }
 
 .product {
-  width: 200px;
+  width: 240px;
   float: right;
   text-align: center;
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
   margin-right: 5px;
+  margin-bottom: 10px;
 }
 
 .product img {
