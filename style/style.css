@@ -4,4 +4,29 @@
 }
 body {
   direction: rtl;
+  font-family: "Sahel";
+}
+
+label {
+  width: 100px;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+form {
+  padding: 10px;
+}
+input,
+textarea,
+select {
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 2px;
+  font-family: "Sahel";
+}
+
+input[type="submit"] {
+  background-color: rgb(33, 40, 109);
+  color: white;
 }

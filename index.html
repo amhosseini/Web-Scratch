@@ -2,28 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/fonts.css" />
     <title>Document</title>
   </head>
   <body>
-    <table>
-      <thead>
-        <th>نام</th>
-        <th>نام خانوادگی</th>
-        <th>نمره</th>
-      </thead>
-      <tr>
-        <td>علی</td>
-        <td>محمدی</td>
-        <td>14</td>
-      </tr>
-      <tr>
-        <td>محسن</td>
-        <td>علوی</td>
-        <td>18</td>
-      </tr>
-    </table>
+    <form method="POST">
+      <div>
+        <div>
+          <label for="txtName">نام</label>
+          <input name="txtName" type="text" placeholder="نام" />
+        </div>
+        <div>
+          <label for="txtFamily">نام خانوادگی</label>
+          <input name="txtFamily" type="text" placeholder="نام خانوادگی" />
+        </div>
+        <div>
+          <label for="txtCat">دسته بندی</label>
+          <select name="txtCat">
+            <option>سوال 1</option>
+            <option>سوال 2</option>
+          </select>
+        </div>
+        <div>
+          <label for="txtDec">توضیحات</label>
+          <textarea name="txtDec" placeholder="توضیحات" rows="5"></textarea>
+        </div>
+        <div>
+          <label for="txtMob">تلفن همراه</label>
+          <input name="txtMob" type="number" placeholder="تلفن همراه" />
+        </div>
+        <input type="submit" value="ثبـــت" />
+      </div>
+    </form>
   </body>
 </html>
