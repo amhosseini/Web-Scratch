@@ -7,26 +7,21 @@ body {
   font-family: "Sahel";
 }
 
-label {
-  width: 100px;
-  display: inline-block;
-  vertical-align: text-top;
-}
-
-form {
+.container {
+  max-width: 960px;
+  margin: 0 auto;
   padding: 10px;
-}
-input,
-textarea,
-select {
-  border: 1px solid gray;
-  padding: 5px;
-  border-radius: 5px;
-  margin: 2px;
-  font-family: "Sahel";
+  text-align: center;
 }
 
-input[type="submit"] {
-  background-color: rgb(33, 40, 109);
-  color: white;
+@media only screen and (max-width: 720px) {
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  img {
+    width: 300px;
+  }
 }
